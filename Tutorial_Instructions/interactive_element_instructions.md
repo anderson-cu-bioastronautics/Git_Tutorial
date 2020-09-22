@@ -6,7 +6,7 @@ However, after a late night battle with MATLAB, you woke up this morning to find
 Since time is of the essence, you've decided to divide up the teamwork to fix all the issues with the plot. 
 
 
-The code used to generate your plot is located [here]('../matlab_scripts/covidGraph.m').
+The code used to generate your plot is located [here]('Git_Tutorial/matlab_scripts/covidGraph.m').
 
 **If you need help remembering the git functions, refer to [`git_cheatsheet.md`](./git_cheatsheet.md).**
 
