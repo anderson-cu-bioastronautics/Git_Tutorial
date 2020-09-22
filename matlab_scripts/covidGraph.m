@@ -22,7 +22,7 @@ subplot(2,1,1)
 casePlot=plot(subsetData.date, subsetData.cases);
 casePlot.Color = 'k';
 casePlot.LineStyle='-';
-casePlot.Marker='none';
+casePlot.Marker='^';
 
 ylim([0,400000]);
 xlabel('xLabel')
@@ -34,7 +34,7 @@ subplot(2,1,2)
 deathPlot = plot(subsetData.date, subsetData.deaths);
 deathPlot.Color = 'k';
 deathPlot.LineStyle='--';
-deathPlot.Marker='none';
+deathPlot.Marker='^';
 
 ylim([0,4000]);
 xlabel('xLabel')
