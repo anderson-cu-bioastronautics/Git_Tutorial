@@ -24,7 +24,7 @@ casePlot.Color = 'g';
 casePlot.LineStyle='-';
 casePlot.Marker='none';
 
-ylim([0,400000]);
+ylim([0,100000]);
 xlabel('xLabel')
 ylabel('yLabel')
 title('Cases');
