@@ -41,6 +41,6 @@ xlabel('xLabel')
 ylabel('yLabel')
 title('Deaths');
 
-sgtitle('State1 COVID19 Data');
+sgtitle('State COVID19 Data');
 
 
