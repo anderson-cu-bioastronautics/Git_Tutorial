@@ -22,7 +22,7 @@ subplot(2,1,1)
 casePlot=plot(subsetData.date, subsetData.cases);
 casePlot.Color = 'k';
 casePlot.LineStyle='-';
-casePlot.Marker='^';
+casePlot.Marker='none';
 
 ylim([0,400000]);
 xlabel('xLabel')
