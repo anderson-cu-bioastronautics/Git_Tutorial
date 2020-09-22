@@ -6,7 +6,7 @@
 
 This is a repository to teach basic Git and GitHub skills to newcomers in a quick one-hour lesson. 
 The lesson includes an interactive element, using either Python, MATLAB, or R. 
-The tutorial leader can setup for the interactive element by following the [group leader instructions](Group-Leader-Instructions.md).
+The tutorial leader can setup for the interactive element by following the [interactive element setup instructions](Interactive_Element_Setup.md).
 
 The tutorial is based on the excellent [tutorial](https://github.com/alcantarar/ASB_Tutorial) presented at the ASB 2020 Conference. 
 Thanks to the original contributers who put together the tutorial:
@@ -29,8 +29,8 @@ There are three things that everyone needs to do BEFORE the tutorial.
     2. [Python](https://www.python.org/)
     3. [R](https://www.r-project.org/about.html)
 
-**Group Leaders have an additional step to complete BEFORE the tutorial:**
-- Create one GitHub repository for your group via [these instructions](Group-Leader-Instructions.md).
+**Tutorial Leaders have an additional step to complete BEFORE the tutorial:**
+- Fork this GitHub repository for your group via [these instructions](Interactive_Element_Setup.md).
 
 ## 1. Creating a GitHub Account
 This should be fairly self explanatory.
