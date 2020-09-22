@@ -11,7 +11,7 @@ covidStruct = cell2struct(covidCell,{'date','state','fips','cases','deaths'},2);
 covidData = struct2table(covidStruct); %turn struct into a table to make it easier to select data per state
 
 %% Select a state to plot
-stateToAnalyze = 'Colorado1';
+stateToAnalyze = 'Colorado';
 subsetData = covidData(strcmp(covidData.state,stateToAnalyze),:); %only get data for the selected state
 
 %% Plot Data
@@ -24,7 +24,7 @@ casePlot.Color = 'k';
 casePlot.LineStyle='-';
 casePlot.Marker='^';
 
-ylim([0,100000]);
+ylim([0,400000]);
 xlabel('xLabel')
 ylabel('yLabel')
 title('Cases');
