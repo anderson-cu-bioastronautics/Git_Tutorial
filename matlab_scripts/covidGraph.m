@@ -34,7 +34,7 @@ subplot(2,1,2)
 deathPlot = plot(subsetData.date, subsetData.deaths);
 deathPlot.Color = 'k';
 deathPlot.LineStyle='--';
-deathPlot.Marker='^';
+deathPlot.Marker='none';
 
 ylim([0,4000]);
 xlabel('xLabel')
