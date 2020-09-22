@@ -1,42 +1,39 @@
-# Breakout Room #1
+# Interactive Element Activity
 
 ## Background
-You and your collaborators have made a recent discovery that will surely result in winning the prestigious
-Nobel Peach Prize, awarded to the group of biomechanists with the best peach-related figure made entirely with 
-code! Your group worked for months, submitted the figure to Nature, and just received reviewer comments. 
-Your group will be able to quickly address these comments in parallel thanks to Git and GitHub!
+You and your collaborators are rushing to publish a time sensitive graph on COVID19 cases in your state!
+However, after a late night battle with MATLAB, you woke up this morning to find some errors in your generated plot.
+Since time is of the essence, you've decided to divide up the teamwork to fix all the issues with the plot. 
 
-The code used to generate your figure is comprised of an upper-level script (e.g. `ASB_Tutorial/main_script`), which 
-calls five numbered subscripts (e.g. `ASB_Tutorial/MATLAB_scripts/script_1`). The data required to generate your 
-figure is stored as CSV files at `ASB_Tutorial/data/`. 
+
+The code used to generate your plot is located [here](https://github.com/anderson-cu-bioastronautics/Git_Tutorial/blob/master/matlab_scripts/covidGraph.m).
 
 **If you need help remembering the git functions, refer to [`git_cheatsheet.md`](./git_cheatsheet.md).**
 
+
 ## Objective
-Work together to address the reviewer comment for each subscript and eventually generate the revised figure 
-by running `main_script`.
+Work together to fix the errors on the graph before its due!
 
 ## 1. Organize
-Your project leader has already invited you as collaborators on the remote repository on GitHub. If this hasn't 
-happened yet, ask for help from the Tutorial Team. It may be helpful to have one group member share their screen while 
-everyone is working through this tutorial. 
+Your project leader has already invited you as collaborators on the remote repository on GitHub.
+If this hasn't happened yet, ask for help.
 
 ### a. Assign Tasks
-You will divide and conquer the reviewer comments. There is one comment for each of the five subscripts. Open a tab,
-navigate to your group's repository page on GitHub, and select the [`reviewer_comments.md`](./reviewer_comments.md) 
-file. After reading, assign each group member a subscript to fix. If there are more subscripts than group members, 
-assign multiple subscripts for some members. 
+You will divide and conquer the issues.
+The project leader has already opened issues in this repository for each of the problems with the graph. 
+They will assign each of the team members an issue to work on. 
+The list of issues can be found by navigating to the "Issues" tab on top of this page. 
 
 ### b. Branch Out
-Once subscripts are assigned, each group member should make his or her own branch of the repository on GitHub. Branching
-creates isolated versions of the current state of the repository and allows group members to simultaneously make changes 
-without affecting one another or the script stored in the remote (online) repository. **Name each branch after the 
-respective subscript(s) that will be fixed.**
+Once issues are assigned, each group member should make his or her own branch of the repository on GitHub. 
+Branching creates isolated versions of the current state of the repository and allows group members to simultaneously make changes 
+without affecting one another or the script stored in the remote (online) repository. 
+**Name each branch after the respective issues(s) that will be fixed.**
 
 1. Navigate to the main page of your group's repository on GitHub (e.g. www.github.com/GROUP-LEADER-USERNAME/ASB_Tutorial)
 2. Click the branch selector menu:    
     ![](../media/branch-selection-dropdown.png)
-3. Type in a descriptive name for your branch (like the name of subscript you're changing), then select **Create branch**:    
+3. Type in a descriptive name for your branch (like the number of issue you're updating), then select **Create branch**:    
     ![](../media/branch-creation-text.png)
     
     If you can't find the "create branch" button, you might not have accepted the invitation to collaborate on the 
@@ -65,7 +62,7 @@ $ git clone URL
 ```
 You now have a copy of the repository located at `~/Desktop`. Go check it out! You'll see all the files that are present on the main page (master branch) of your group's repository on GitHub. In Git Bash, navigate into the repository you just cloned:
 ```
-$ cd ASB_Tutorial
+$ cd Git_Tutorial
 ```
 Before making any changes to files, you need to *checkout* the branch you created on GitHub. Remember that branches 
 are isolated versions of a (local and/or remote) repository. You can view the available branches by executing:
@@ -82,12 +79,11 @@ $ git checkout YOUR-BRANCH-NAME
 Git should return a message explaining that you `"Switched to branch YOUR-BRANCH-NAME"`. Now you're ready to address some very reasonable reviewer comments!
 
 ### Generate Original Figure
-Open and run `ASB_Tutorial/main_script`. This is the figure you submitted to Nature and will be revising per reviewer
-comments.
+Open and run `covidGraph.m`. This is the figure that needs some fixing. 
 
 ## 2. Making changes to files
 ### a. Changing your assigned subscript 
-Open MATLAB (or preferred IDE for R and Python scripts) and make the requested change in [`reviewer_comments.md`](./reviewer_comments.md). Save the debugged file with the same filename.
+Open MATLAB (or a plain text editor) and make the requested change from the issue assigned to you. Save the debugged file with the same filename.
 
 ### b. Commit changes
 You made changes to a file in the repository and want these changes to be recorded by Git. Git takes "snapshots" called 
@@ -148,7 +144,7 @@ line-by-line changes made to the script as well as your commit message.
 **Before moving on, make sure all group members have fixed their assigned scripts, and staged/committed/pushed their changes.**
 
 ## 3. Merging branches
-At this point, each branch contains their respective fixed subscripts. However, `main_script` on the `master` branch 
+At this point, each branch contains their respective fixed subscripts. However, `covidGraph.m` on the `master` branch 
 on GitHub still isn't updated because you haven't merged all these changes together. The way this is accomplished in 
 GitHub is through a process called a *Pull Request*. Pull requests merge two branches, applying any changes made in 
 one branch to the other branch. 
@@ -164,8 +160,10 @@ and then select the green "New pull request" button.
 If you click on the *base repository*, you'll see multiple options because the original `ASB_Tutorial` repository is owned
 by `alcantarar` and has just been copied to your group leader's account via a process called [*forking*](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 Forking a public repository allows you to have a copy, make any changes, and potentially contribute to the original repository
-via pull requests. However, in this tutorial you are just contributing to your group leader's forked `ASB_Tutorial` repository,
-not the original one. Set the *base repository* to `GROUP-LEADER-USERNAME/ASB_Tutorial`, *base branch* to `master`, and the 
+via pull requests. 
+However, in this tutorial you are just contributing to your group leader's forked `Git_Tutorial` repository,
+not the original one. 
+Set the *base repository* to `GROUP-LEADER-USERNAME/Git_Tutorial`, *base branch* to `master`, and the 
 *compare branch* to your branch from the dropdown menu:    
 
 ![](../media/PR-dropdown.png)
@@ -209,10 +207,7 @@ $ git pull
 Now your local copy is up to date with the remote repository on GitHub. 
 
 ## Moment of Truth
-Go ahead and run `main_script` on your own. If all the changes from each branch were merged into
-`master`, then `main_script` should produce the reviewer's version of your figure:
+Go ahead and run `covidGraph.m` on your own. If all the changes from each branch were merged into
+`master`, then `covidGraph.m` should produce the foxed version of your figure:
 
-<div align="center">
-<img src = "../media/breakout2_fig.png" >
-<p>Doesn't it look better? :wink:</p>
-</div>
+
