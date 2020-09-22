@@ -38,7 +38,7 @@ deathPlot.Marker='^';
 
 ylim([0,4000]);
 xlabel('xLabel')
-ylabel('yLabel')
+ylabel('deaths')
 title('Deaths');
 
 sgtitle('State COVID19 Data');
