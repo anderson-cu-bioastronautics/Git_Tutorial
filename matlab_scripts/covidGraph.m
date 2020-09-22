@@ -37,7 +37,7 @@ deathPlot.LineStyle='--';
 deathPlot.Marker='^';
 
 ylim([0,4000]);
-xlabel('xLabel')
+xlabel('Date')
 ylabel('yLabel')
 title('Deaths');
 
