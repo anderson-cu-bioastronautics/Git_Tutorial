@@ -41,6 +41,6 @@ xlabel('xLabel')
 ylabel('yLabel')
 title('Deaths');
 
-sgtitle('State COVID19 Data');
+sgtitle('Colorado COVID19 Data');
 
 
