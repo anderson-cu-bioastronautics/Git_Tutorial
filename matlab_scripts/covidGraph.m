@@ -33,7 +33,7 @@ title('Cases');
 subplot(2,1,2)
 deathPlot = plot(subsetData.date, subsetData.deaths);
 deathPlot.Color = 'k';
-deathPlot.LineStyle='--';
+deathPlot.LineStyle='-';
 deathPlot.Marker='^';
 
 ylim([0,4000]);
