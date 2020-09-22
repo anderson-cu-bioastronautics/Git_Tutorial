@@ -25,7 +25,7 @@ casePlot.LineStyle='-';
 casePlot.Marker='^';
 
 ylim([0,400000]);
-xlabel('xLabel')
+xlabel('Date')
 ylabel('yLabel')
 title('Cases');
 
