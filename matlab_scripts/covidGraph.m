@@ -20,7 +20,7 @@ figure;
 
 subplot(2,1,1)
 casePlot=plot(subsetData.date, subsetData.cases);
-casePlot.Color = 'k';
+casePlot.Color = 'g';
 casePlot.LineStyle='-';
 casePlot.Marker='none';
 
